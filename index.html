@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BASSIG.HTML</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Welcome to My Personal Page</h2>
+    <img src=img.jpg alt="Profile Picture" class="profile-pic" />
+   <h6>Click the buttons below to learn more about me:)</h6>
+
+    <div class="buttons">
+      <button onclick="showSection('about')">About Me</button>
+      <button onclick="showSection('Hobbies')">Hobbies</button>
+      <button onclick="showSection('Favorite Singer')">Favorite Singer</button>
+      <button onclick="showSection('contact')">Contact</button>
+      <button onclick="showSection('Music')">Music</button>
+      <button onclick="showSection('Favorite Anime')">Favorite Anime</button>
+   
+    </div>
+
+    <div id="about" class="section">
+      <p>I'm <strong>Cristian</strong>, an active and adventurous individual and that I like both physical and Digital World. Online gaming challenges me and allows me to experience a new type of connection with people, basketball is my favorite sport as it keeps me competitive, focused, and connected with friends. I appreciate fitness and I take time to exercise to keep healthy and confident, and I feel free and adventurous when I ride my motorcycle, exploring the open road. I always listen to music in my everyday life it gives me energy, calms me down, and gives me courage in whatever I am doing.</p>
+    </div>
+
+    <div id="Hobbies" class="section">
+      <h3>Hobbies</h3>
+    <ul> 
+      <li>Exercise</li>
+      <li>Riding Motorcycles</li>
+      <li>playing online Games</li>
+      <li>Playing basketball</li>
+      <li>Listening to Music</li>
+    </ul>
+    </div>
+
+    <div id="Favorite Singer" class="section">
+      <h2>Favorite Singer</h2>
+      <p>I love listening to <em>talented artists</em> who create meaningful music:)</p>
+      <ul>
+        <li><strong>Arthur Nery</strong></li>
+        <li><strong>Daniel Caesar</strong></li>
+        <li><strong>Joji</strong></li>
+      </ul>
+    </div>
+
+    <div id="contact" class="section">
+      <h3>Contact Me</h3>
+      <p><strong> Email:</strong> <a href="mailto:bassigjumong@gmail.com">bassigjumong@gmail.com</a></p>
+      <p><em>Feel free to reach out!</em></p>
+    </div>
+   
+    <div id="Music" class="section">
+      <h4> My Favorite Music</h4  >
+      <p>Here are some of my <strong>favorite songs</strong> to listen to:</p>
+      <ul>
+        <li><strong>Arthur Nery</strong> - <em>Di Nakakasawa</em></li>
+        <li><strong>Daniel Caesar</strong> - <em>Get You</em></li>
+        <li><strong>Joji</strong> - <em>Slow It Down</em></li>
+      </ul>
+     
+      <h5> Music Player</h5>
+      <audio controls style="width: 100%; margin-top: 15px;">
+        <source src="Arthur Nery - Di Nakakasawa feat. Kiyo (Official Music Video) starring Nadine Lustre - Arthur Nery.mp3" type="audio/mpeg">
+       
+      </audio>
+      <p><small><em>Click play to listen to my favorite song!</em></small></p>
+    </div>
+ 
+    <div id="Favorite Anime" class="section">
+      <h1>Anime</h1>
+      <p>Here are some of my favorite anime:</p>
+      <ul>
+        <li><strong>Attack on Titan</strong></li>
+        <li><strong>Jujutsu Kaisen</strong></li>
+        <li><strong>Demon Slayer</strong></li>
+      </ul>
+
+      <h3>Demon Slayer</h3>
+      <video controls style="width: 100%; margin-top: 5px; height: 560px;"  >
+       <source src="black clover.mp4" type="video/mp4">
+       
+    </div>
+
+   
+
+<script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(sec => sec.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      showSection('about');
+    });
+   
+  </script>
+</body>
+</html>
+
